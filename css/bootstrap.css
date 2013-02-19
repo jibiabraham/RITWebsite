@@ -7892,7 +7892,22 @@ a.badge:focus {
 }
 /* All the modified css goes in here */
 body {
-  background: url("/images/bghero.png") repeat-x;
+  background: url("/images/bghero.png") repeat-x #2b2826;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #2b2826;
+  font-weight: 100;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 42px;
 }
 .social-icons {
   height: 125px;
@@ -8089,6 +8104,90 @@ body {
 }
 .main .main-bg .main-container {
   border-top: none !important;
+}
+.main footer {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #635e5a;
+}
+.main footer .footer-border {
+  margin: 0;
+  padding-bottom: 39px;
+  text-align: center;
+  border-bottom: #312e2c 1px solid;
+  line-height: 0;
+  font-size: 0;
+}
+.main footer .footer-menu {
+  margin: 0;
+  float: none;
+  overflow: hidden;
+  display: inline-block;
+}
+.main footer .footer-menu li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  zoom: 1;
+  z-index: 99;
+  float: left;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.main footer .footer-menu li a {
+  color: #635e5a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.main footer .footer-menu li.active a,
+.main footer .footer-menu li a:hover {
+  background: #635e5a;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.main footer .span12 > div {
+  text-align: center;
+  padding-top: 110px;
+  text-transform: uppercase;
+}
+.main footer .span12 > div > span {
+  display: block;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: -3px;
+  position: relative;
+  z-index: 999;
+}
+.main footer .span12 > div > span > a {
+  color: #635e5a;
+}
+.main footer a.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  color: #635e5a !important;
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: 100;
 }
 @media (min-width: 1270px) {
   .main {
