@@ -1,0 +1,207 @@
+/* All the modified css goes in here */
+
+body {
+	background: url("/images/bghero.png") repeat-x;
+}
+
+.social-icons {
+	height: 125px;
+	ul {
+		list-style: none;
+		padding: 57px 0 40px 0;
+		li {
+			width: 34px;
+			height: 34px;
+			display: inline-block;
+		}
+	}
+}
+
+.main {
+	margin: 0 auto;
+
+	.main-bg {
+		background: #fff;
+		.border-radius(@baseBorderRadius);
+
+		header {
+			padding: 95px 0 0 0;
+			text-align: center;
+			.box-shadow(none);
+			text-align: center;
+
+			h1.brand {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+
+				a {
+					display: inline-block;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					text-shadow: none;
+
+					span {
+						font-family: 'Raleway', sans-serif;
+						display: block;
+						color: #2b2826;
+						font-size: 1em;
+						line-height: 2em;
+						font-weight: 900;
+					}
+
+					strong {
+						font-weight: normal;
+						font-family: Arial, Helvetica, sans-serif;
+						color: #cdc9c7;
+						font-size: 0.3em;
+						line-height: 2em;
+						margin-top: -0.5em;
+						display: block;
+					}
+				}
+			}
+
+		}
+
+		.nav-border {
+			border-top: #eeeeee 1px solid;
+			margin-top: 64px;
+
+			.navbar {
+				margin: 16px 0 16px 0;
+
+				.navbar-inner {
+					position: relative;
+					padding: 0;
+					margin: 0;
+					background: none;
+					border: none;
+					min-height: inherit;
+					.box-shadow(none);
+
+					.nav-collapse {
+						margin: 0;
+						line-height: 0 !important;
+						font-size: 0;
+						text-align: center;
+
+						.nav {
+							float: none;
+							display: inline-block;
+
+							li {
+								margin: 0;
+								padding: 0;
+								position: relative;
+								zoom: 1;
+								z-index: 99;
+
+								a {
+									color: #2b2826;
+									font-family: Arial, Helvetica, sans-serif;
+									font-weight: normal;
+									font-size: 14px;
+									line-height: 17px;
+									text-shadow: none;
+									text-decoration: none;
+									display: inline-block;
+									margin: 0;
+								}
+
+								ul {
+									position: absolute;
+									display: none;
+									width: 116px;
+									list-style: none;
+									zoom: 1;
+									z-index: 9;
+									margin: 0;
+									padding: 20px 10px 20px 10px;
+									background: #2b2826;
+									.border-radius(5px);
+
+									li {
+										line-height: 17px;
+										display: block;
+										text-align: left;
+										position: relative;
+										margin-top: 1px;
+
+										a {
+											.box-shadow(none);
+											.transition(0.3s);
+											.border-radius(5px);
+											color: #ffffff;
+											position: relative;
+											padding: 6px 5px 6px 5px;
+											display: block;	
+										}
+									}
+
+									li:first-child {
+										margin-top: 0;
+									}
+								}
+
+								>ul {
+									left: 0;
+									top: 63px;
+								}
+							}
+
+							>li {
+								float: left;
+								display: inline-block;
+								.box-sizing(border-box);
+								margin-left: 20px;
+
+								>a {
+									display: inline-block;
+									position: relative;
+									text-align: center;
+									padding: 10px 20px 10px 20px;
+									.border-radius(5px);
+									.box-shadow(none);
+									text-shadow: none;
+									.transition(0.3s);
+								}
+							}
+
+							>li.active > a, >li.active > a:hover, li > a:hover {
+								background: #2b2826;
+								.box-shadow(none);
+								color: #ffffff;
+								text-shadow: none;
+								.transition(0.3s);
+							}
+
+							>li:first-child {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#content {
+			padding-bottom: 77px;
+			border-top: #eeeeee 1px solid;
+		}
+
+		.main-container {
+			border-top: none !important;
+		}
+
+	}
+
+}
+
+
+@media (min-width: 1270px){
+	.main {
+		max-width: 1250px;
+	}
+}
