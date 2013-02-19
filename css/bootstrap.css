@@ -8137,7 +8137,8 @@ h2 {
   text-align: center;
   border-bottom: #312e2c 1px solid;
   line-height: 0;
-  font-size: 0;
+  /*font-size: 0;*/
+
 }
 .main footer .footer-menu {
   margin: 0;
