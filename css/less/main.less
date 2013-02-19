@@ -135,7 +135,7 @@ h2 {
 									z-index: 9;
 									margin: 0;
 									padding: 20px 10px 20px 10px;
-									background: #2b2826;
+									background: rgb(214, 207, 202);
 									.border-radius(5px);
 
 									li {
@@ -163,7 +163,26 @@ h2 {
 
 								>ul {
 									left: 0;
-									top: 63px;
+									top: 38px;
+								}
+
+								&.open ul {
+									display: block;
+
+									li {
+										a {
+											color: #2b2826;
+											background: rgb(214, 207, 202);
+
+											&:hover {
+												background: #2b2826;
+												.box-shadow(none);
+												color: #ffffff;
+												text-shadow: none;
+												.transition(0.3s);
+											}
+										}
+									}
 								}
 							}
 
@@ -185,7 +204,7 @@ h2 {
 								}
 							}
 
-							>li.active > a, >li.active > a:hover, li > a:hover {
+							>li.active > a, >li.active > a:hover, li > a:hover, li.open > a {
 								background: #2b2826;
 								.box-shadow(none);
 								color: #ffffff;

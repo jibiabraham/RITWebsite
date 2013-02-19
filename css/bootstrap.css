@@ -8021,7 +8021,7 @@ h2 {
   z-index: 9;
   margin: 0;
   padding: 20px 10px 20px 10px;
-  background: #2b2826;
+  background: #d6cfca;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -8054,7 +8054,26 @@ h2 {
 }
 .main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li > ul {
   left: 0;
-  top: 63px;
+  top: 38px;
+}
+.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li.open ul {
+  display: block;
+}
+.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li.open ul li a {
+  color: #2b2826;
+  background: #d6cfca;
+}
+.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li.open ul li a:hover {
+  background: #2b2826;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #ffffff;
+  text-shadow: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav > li {
   float: left;
@@ -8083,7 +8102,8 @@ h2 {
 }
 .main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav > li.active > a,
 .main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav > li.active > a:hover,
-.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li > a:hover {
+.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li > a:hover,
+.main .main-bg .nav-border .navbar .navbar-inner .nav-collapse .nav li.open > a {
   background: #2b2826;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
