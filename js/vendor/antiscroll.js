@@ -38,9 +38,14 @@
     this.padding = undefined == this.options.padding ? 2 : this.options.padding;
 
     this.inner = this.el.find('.antiscroll-inner');
+    if (!this.inner.data("inner-init-width")){
+      this.inner.data("inner-init-width", this.inner.width());
+    }
     this.inner.css({
-        'width':  '+=' + (this.y ? scrollbarSize() : 0)
-      , 'height': '+=' + (this.x ? scrollbarSize() : 0)
+        width: this.inner.get(0).clientWidth + scrollbarSize(),
+    });
+    this.el.css({
+      width: this.inner.data("inner-init-width")
     });
 
     var cssMap = {};
@@ -455,7 +460,7 @@
   var size;
 
   function scrollbarSize () {
-    if (size === undefined) {
+    if (size === undefined || !size) {
       var div = $(
           '<div style="width:50px;height:50px;overflow:hidden;'
         + 'position:absolute;top:-200px;left:-200px;"><div style="height:100px;">'
@@ -464,9 +469,9 @@
 
       $('body').append(div);
 
-      var w1 = $('div', div).innerWidth();
+      var w1 = $('div', div).get(0).offsetWidth;
       div.css('overflow-y', 'scroll');
-      var w2 = $('div', div).innerWidth();
+      var w2 = div.get(0).clientWidth;
       $(div).remove();
 
       size = w1 - w2;

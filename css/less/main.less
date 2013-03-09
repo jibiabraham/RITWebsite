@@ -242,6 +242,31 @@ a {
 		#content {
 			padding-bottom: 77px;
 			border-top: #eeeeee 1px solid;
+
+			#events, #ticker {
+				ul {
+					list-style: none;
+					height: 125px;
+					overflow: hidden;
+					margin-left: 0;
+					.clearfix;
+
+					li{
+						height: 175px;
+						float: left;
+					}
+				}
+			}
+
+			#ticker {
+				ul {
+					min-height: 100px;
+
+					li {
+						float: none;
+					}
+				}
+			}
 		}
 
 		.main-container {
